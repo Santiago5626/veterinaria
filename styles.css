@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #1d1f27;
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #001a32;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(135,51,255);
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo-container h1 {
+    color: #58a6ff;
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.logo-container span {
+    display: block;
+    font-size: 40px;
+    color: #58a6ff;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #58a6ff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #58a6ff;
+    color: #1d1f27;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.articulos {
+    width: 70%;
+}
+
+.articulos article {
+    margin-bottom: 30px;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.articulos img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+aside {
+    width: 100%;
+    max-width: 400px;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: #f5f5f5;
+}
+
+aside h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #58a6ff;
+    font-size: 22px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+    color: #f5f5f5;
+    margin-bottom: 15px;
+    font-size: 14px;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus {
+    border-color: #58a6ff;
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #8733ff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #8733ff; /* Nuevo color al pasar el mouse (Tomato) */
+    transform: scale(1.1); /* Aumenta el tamaño del botón al pasar el mouse */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Añade una sombra al botón */
+    color: #f5f5f5;
+}
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+
+footer {
+    background-color: #111;
+    color: #58a6ff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 2px solid #58a6ff;
+}
+
+/* Estilos del modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+}
+
+.modal-content {
+    background-color: #222;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.modal-content p {
+    color: #58a6ff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.modal-content button {
+    padding: 10px 20px;
+    background-color: #58a6ff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #4a90e2;
+}

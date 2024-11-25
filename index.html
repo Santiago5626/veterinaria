@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Veterinaria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo Veterinaria" class="logo">
+            <h1>Clínica<br><span>Veterinaria</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="guarderia.html">Guardería</a></li>
+                <li><a href="promociones.html">Promociones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="articulos">
+            <article>
+                <h2>Consejos para el cuidado de perros</h2>
+                <img src="perro.jpg" alt="Cuidado de perros">
+                <p>Tener un perro implica una gran responsabilidad, pero también es una de las experiencias más gratificantes. 
+                Para asegurarte de que tu amigo peludo esté sano y feliz, es importante seguir ciertos cuidados que no solo beneficiarán su bienestar, 
+                sino también fortalecerán el vínculo que tienes con él. <a href="https://puntovet.com.co/consejos-para-el-cuidado-de-las-mascotas/">Leer más...</a></p>
+            </article>
+            <article>
+                <h2>Tips para el cuidado de gatos</h2>
+                <img src="gato.jpg" alt="Cuidado de gatos">
+                <p>El cuidado de un gato requiere atención a varios aspectos clave para garantizar su bienestar y felicidad. 
+                    Es fundamental proporcionarle una alimentación balanceada, rica en proteínas de alta calidad y adecuada para su etapa de vida, 
+                    ya que los gatos son carnívoros estrictos y necesitan nutrientes específicos como la taurina. Además, un acceso constante a agua fresca es vital para prevenir problemas urinarios, 
+                    comunes en los felinos. La higiene también es crucial, por lo que es importante limpiar regularmente su caja de arena, ya que los gatos son animales muy limpios y pueden rechazar usar una caja sucia. 
+                    Cepillar su pelaje de manera frecuente ayuda a reducir las bolas de pelo, especialmente en razas de pelo largo, y también fortalece el vínculo entre el gato y su dueño.
+                    Los gatos son animales muy independientes, pero necesitan estímulo mental y físico, por lo que proporcionar juguetes, rascadores y dedicar tiempo a jugar con ellos previene el aburrimiento y los comportamientos destructivos. <a href="https://www.purina.es/cuidados/gatos/salud/aseo-cuidados-diarios/gato-saludable">Leer más...</a></p>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Programa tu cita médica</h3>
+            <form id="citaForm" action="reserva-cita.html" method="post"> <!-- Asegúrate de tener este id -->
+                <label for="nombre">Nombre del dueño:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="mascota">Nombre de la mascota:</label>
+                <input type="text" id="mascota" name="mascota" required>
+
+                <label for="fecha">Fecha de la cita:</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <label for="hora">Hora de la cita:</label>
+                <input type="time" id="hora" name="hora" required>
+
+                <button type="submit">Reservar Cita</button>
+            </form>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Contacto: Calle Falsa 123, Teléfono: 555-555-555, Email: info@veterinaria.com</p>
+    </footer>
+    
+    <!-- Modal de confirmación -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <p>Cita agendada exitosamente</p>
+            <button id="closeModal">Aceptar</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
